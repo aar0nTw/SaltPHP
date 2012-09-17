@@ -23,7 +23,7 @@ require 'SaltPHP/src/Salt.php';
 
 Salt::need(
    'lib', //Require "lib.php"
-   'lib2',
+   'lib2',//More arguments can require multiple files
    'lib3'
 );
 ```
