@@ -2,6 +2,45 @@
 
 SaltPHP is a php multiple require tools.
 
+##How to use
+
+Demo file tree :
+
+```
+demo
+├── index.php
+└── lib.php
+```
+And the "index.php" script:
+
+```
+<?php
+// Filename : index.php
+
+require 'SaltPHP/src/Salt.php';
+
+Salt::need(
+   'lib' //Require "lib.php"
+);
+```
+Use other file path:
+
+```
+// Filename : index.php
+
+require 'SaltPHP/src/Salt.php';
+
+Salt::basePath(
+	'vendor',
+	'ext'
+)
+
+Salt::need(
+   'lib' //Require "lib.php" or "vendor/lib.php" or "ext/lib.php"
+);
+
+```
+
 ##Contributing to SaltPHP
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
