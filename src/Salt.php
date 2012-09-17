@@ -36,6 +36,7 @@ class Salt
           $sourcefile = $dir.DIRECTORY_SEPARATOR.$file;
           if(file_exists($sourcefile)){
             require $file;
+            return;
           }
         }
 
