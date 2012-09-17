@@ -1,6 +1,6 @@
 # SaltPHP
 
-SaltPHP is a php multiple require tools. 
+SaltPHP is a php multiple require tools.
 If you just want to write a simple php script,maybe you don't need to implement the PSR-0 standard, but you also want to require something from a easy way.
 
 
@@ -22,7 +22,9 @@ And the "index.php" script:
 require 'SaltPHP/src/Salt.php';
 
 Salt::need(
-   'lib' //Require "lib.php"
+   'lib', //Require "lib.php"
+   'lib2',
+   'lib3'
 );
 ```
 Use other file path:
@@ -44,7 +46,7 @@ Salt::need(
 ```
 
 ##Contributing to SaltPHP
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
