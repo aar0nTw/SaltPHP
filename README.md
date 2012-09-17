@@ -1,6 +1,8 @@
 # SaltPHP
 
-SaltPHP is a php multiple require tools.
+SaltPHP is a php multiple require tools. 
+If you just want to write a simple php script,maybe you don't need to implement the PSR-0 standard, but you also want to require something from a easy way.
+
 
 ##How to use
 
